@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mobil-tetbiq{
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: blue;
+}
+.mobil-text{
+    padding: 0 50px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.mobil-text h2{
+    font-size: 32px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mobil-text p{
+    font-size: 17px;
+    font-family: sans-serif;   
+    color: #fff; 
+}
+.mobil-install{
+    width: 100%;
+    display: flex;
+}
+.mobil-install a{
+    width: 120px;
+    margin: 10px 10px;
+}
+.mobil-install a:nth-child(1){
+    margin-left:  0;
+}
+.mobil-install img{
+    width: 100%;
+}
+.mobil-img{
+    padding: 25px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobil-img img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 960px) {
+    .mobil-tetbiq{
+        flex-direction: column-reverse;
+    }
+    .mobil-img{
+        width: 100%;
+    }
+    .mobil-text{
+        width: 100%;
+        padding-bottom: 30px;
+    }
+}

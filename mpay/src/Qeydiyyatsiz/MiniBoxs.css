@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.miniboxs{
+    width: 180px;
+    height: 140px;
+    background-color: #fff;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.miniboxs img{
+    width: 50%;
+    margin: 8px 0;
+}

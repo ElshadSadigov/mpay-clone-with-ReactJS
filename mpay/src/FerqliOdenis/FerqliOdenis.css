@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ferqli-odenis{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.odenis-img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.odenis-text{
+    padding: 50px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.odenis-text h2{
+    font-size: 50px;
+    margin: 15px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.odenis-text p{
+    font-size: 20px;
+    line-height: 30px;
+    margin: 5px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@media screen and (max-width: 1060px) {
+    .odenis-text{
+        align-items: center;
+    }
+    .odenis-text h2{
+        font-size: 25px;
+    }
+    .odenis-text p{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 960px) {
+    .ferqli-odenis{
+        flex-direction: column;
+    }
+    .odenis-img{
+        width: 100%;
+    }
+    .odenis-text{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+}

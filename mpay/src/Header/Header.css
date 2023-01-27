@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.header-left img{
+    margin: 0 3rem;
+}
+.header-ul{
+    display: flex;
+    align-items: center;
+}
+.header-ul li{
+    list-style: none;
+}
+.header-ul a{
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header-right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-right > div{
+    margin: 0 2rem;
+}
+.header-languge span{
+    border-radius: 10px;
+    line-height: 40px;
+    padding: 8px 10px;
+    cursor: pointer;
+    width: 110px;
+    height: 40px;
+    background-color: rgb(194, 183, 183);
+}
+.header-languge a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 5px 0 0;
+}
+.header-right ul{
+    display: none;
+}
+.header-login button{
+    width: 120px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.header-login button:nth-child(1){
+    border: #0087b1 solid 1px;
+    background: none;
+    color: #0087b1;
+}
+.header-login button:nth-child(2){
+    background-color: #0087b1;
+    color: #fff;
+    border: none;
+}
+@media screen and (max-width: 1260px) {
+    .header-login button:nth-child(2){
+        display: none;
+    }
+    .header-login button:nth-child(1){
+        background-color: #0087b1;
+        color: #fff;
+    }
+    .header-languge span{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 1040px) {
+    .header-left{
+        justify-content: start;
+        padding: 0 40px;
+    }
+    .header-ul{
+        display: none;
+    }
+    .header-right{
+        justify-content: end;
+    }
+}
